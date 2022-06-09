@@ -1,5 +1,5 @@
 
-# BackendPruebaTecnica
+# FrontEndPruebaTecnica
 
 ***Prueba Técnica para aplicación a ETraining***
 
