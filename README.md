@@ -1,27 +1,17 @@
-# PruebaFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+# BackendPruebaTecnica
 
-## Development server
+***Prueba Técnica para aplicación a ETraining***
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este Frontend desarrollado con el framework Angular pretende exponer los servicios expuestos en la API REST para realizar el CRUD de forma dinámica a dicha base de datos. Para esto se crearon componentes que se encargan de realizar las peticiones a dicha API y actualizar la vista expuesta.
 
-## Code scaffolding
+## Prueba local
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Para realizar el testeo de este backend es necesario la instalación de los siguientes modulos: ng, npm, nodejs y angular.
+* Será necesario la construcción de la aplicación de forma local (ng serve), esta por defecto estará disponible en la dirección: http://localhost:4200/.
+* Cabe agregar que tanto la base de datos como el backend deben estar activos.
 
-## Build
+## Despliegue
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Para dicho despliegue deben estar activos los servicios o los propios 'deployements' de la base de datos y backend.
+* Dado que la construcción del frontend se realizó mediante el uso de un framework, es necesario que el servicio que se utilice para el despliegue lo soporte, para ello se puede utilizar Vercel que compila dicho framework para su correcto funcionamiento.
