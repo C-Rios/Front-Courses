@@ -1,0 +1,6 @@
+<div class="curso--item">
+    <h2>{{myCurso.nombre}}</h2>
+    <p>Fecha de inicio: {{myCurso.fecha_inicio | date:'dd-MM-yyyy'}}</p>
+    <p>Fecha de finalización: {{myCurso.fecha_fin | date:'dd-MM-yyyy'}}</p>
+    <button (click)= "editarCurso()">Editar</button>
+</div>

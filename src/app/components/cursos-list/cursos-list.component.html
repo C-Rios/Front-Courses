@@ -1,0 +1,22 @@
+<h1><strong>Agrega un curso</strong></h1>
+<app-add-curso (crearCurso)="cursoCreado($event)"></app-add-curso>
+<hr>
+<h1><strong>Todos los cursos</strong></h1>
+<div class="cursos--grid">
+    <app-curso [myCurso]="x" *ngFor="let x of cursos" (cursoEditar)="onEditarCurso($event)" ></app-curso>
+</div>
+<div class="curso-edit" [class.active] = "cursoEditar">
+    <h2>Nombre del curso</h2><br>
+    <input type="text" class="curso-edit-text" value={{cursoEditando.nombre}} #nombreEditado><br>
+    
+    <h2>Fecha de inicio</h2><br>
+    <input type="date" class="curso-edit-text" value={{cursoEditando.fecha_inicio}} #fecha_inicioEditada><br>
+
+    
+    <h2>Nombre del curso</h2><br>
+    <input type="date" class="curso-edit-text" value={{cursoEditando.fecha_fin}} #fecha_finEditada><br>
+
+    <button type="submit" (click) = "saveEditarCurso(nombreEditado.value, fecha_inicioEditada.value, fecha_finEditada.value)" >Guardar</button>
+    <button (click)="eliminarProducto()">Eliminar</button><br>
+
+</div>

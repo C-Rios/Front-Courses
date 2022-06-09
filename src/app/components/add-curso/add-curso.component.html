@@ -1,0 +1,12 @@
+<div class="add-curso-container">
+    <h3>Nombre del curso</h3>
+    <input type="text" class="curso-edit-text" placeholder="Ej: Liderazgo" #nombre>
+
+    <h3>Fecha de inicio</h3>
+    <input type="date" class="curso-edit-text" required #fecha_inicio>
+
+    <h3>Fecha de fin</h3>
+    <input type="date" class="curso-edit-text" required #fecha_fin>
+
+    <button type="button" (click) = "guardarCurso(nombre.value, fecha_inicio.value, fecha_fin.value)">Enviar</button>
+</div>

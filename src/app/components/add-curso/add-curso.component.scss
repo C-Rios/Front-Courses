@@ -1,0 +1,19 @@
+.add-curso-container{
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.add-curso-container input{
+    width: 15%;
+}
+
+.add-curso-container button{
+    width: 7%;
+}
+
+.add-curso-container h3{
+    font-size: 1.3em;
+}
